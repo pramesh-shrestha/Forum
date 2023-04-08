@@ -1,0 +1,22 @@
+{
+  "Users": [
+    {
+      "Firstname": "Pramesh",
+      "Lastname": "Shrestha",
+      "Username": "pramesh",
+      "Password": "password"
+    },
+    {
+      "Firstname": "Rajip",
+      "Lastname": "Paudyal",
+      "Username": "rajip",
+      "Password": "password"
+    },
+    {
+      "Firstname": "Suhani",
+      "Lastname": "Pandey",
+      "Username": "suhani",
+      "Password": "password"
+    }
+  ]
+}

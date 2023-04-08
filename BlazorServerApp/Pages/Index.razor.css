@@ -1,0 +1,17 @@
+﻿h1, p{
+    font-weight: bolder;
+    color: #1B5690;
+    font-family: "Monotype Corsiva",'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+}
+p{
+    font-size: 25px;
+}
+
+#home{
+ text-align: center;
+}
+
+.container{
+    margin-top: 80px;
+}

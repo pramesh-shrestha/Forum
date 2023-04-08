@@ -1,0 +1,108 @@
+﻿@page "/RegisterUser"
+@using BlazorServerApp.Services.ClientInterfaces
+@using global::Shared.Models
+@inject IUserService UserService;
+
+
+<h3>Register here to be part of the family.</h3>
+<h5>"Connect with people who share your interests."</h5>
+<div class="container-fluid">
+
+    <div class="form-group card">
+        <h3>Sign up</h3>
+        
+         <label>Firstname</label> 
+        <div class="textField">
+            <input type="text" placeholder="Enter firstname" @bind="firstName">
+        </div>
+         <label>Lastname</label> 
+        <div class="textField">
+            <input type="text" placeholder="Enter lastname" @bind="lastName">
+        </div>
+
+        <label>Username</label> 
+        <div class="textField">
+            <input type="text" placeholder="Enter username" @bind="userName" @bind:event="oninput">
+        </div>
+
+
+        <label>Password</label>
+        <div class="textField">
+            <input type="password" placeholder="Enter password" @bind="password">
+        </div>
+
+        <label>Repeat password</label>
+        <div class="textField">
+            <input type="password" placeholder="Repeat password" @bind="repeatPassword" >
+        </div>
+        
+        <div class="button-row">
+            <button class="acceptbtn"  @onclick="Register" disabled="@string.IsNullOrEmpty(userName)">Register</button>
+        </div>
+        <div class="error">
+            @if (!string.IsNullOrEmpty(errorLabel)) {
+                <label style="color: @color">@errorLabel</label>
+            }
+        </div>
+    </div>
+    
+    <div class="form-group col-sm-8 offset-2 registerImg">
+        <img src="img/register_img.jpg" alt="">
+    </div>
+
+</div>
+
+@code {
+    private string firstName = "";
+    private string lastName = "";
+    private string userName = "";
+    private string password = "";
+    private string repeatPassword = "";
+    private string errorLabel = "";
+    private string color = "";
+
+
+    private async Task Register() {
+        errorLabel = "";
+        try {
+            if (string.IsNullOrEmpty(firstName)) {
+                errorLabel = "Firstname cannot be empty.";
+                color = "red";
+
+            }
+            if (string.IsNullOrEmpty(lastName)) {
+                errorLabel = "Lastname cannot be empty.";
+                color = "red";
+
+            }
+            if (string.IsNullOrEmpty(userName)) {
+                errorLabel = "Username cannot be empty.";
+                color = "red";
+
+            }
+            if (!repeatPassword.Equals(password)) {
+                errorLabel = "Password does not match";
+                color = "red";
+
+            }
+
+            if (string.IsNullOrEmpty(errorLabel)) {
+                await UserService.RegisterUser(new User(firstName, lastName, userName, password));
+                errorLabel = "User successfully created";
+                color = "green";
+                firstName = "";
+                lastName = "";
+                userName = "";
+                password = "";
+                repeatPassword = "";
+            }
+
+        }
+        catch (Exception e) {
+            errorLabel = e.Message;
+            color = "red";
+        }
+
+    }
+
+}

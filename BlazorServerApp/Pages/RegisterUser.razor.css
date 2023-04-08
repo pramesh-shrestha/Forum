@@ -1,0 +1,50 @@
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.acceptbtn {
+    background-color: #FE080B;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform ease 300ms;
+}
+
+.acceptbtn:hover{
+    transform: translate(0, -5px);
+}
+
+.button-row{
+    margin-top: 15px;
+}
+
+label, h1{
+    font-weight: bold;
+    padding: 3px;
+}
+
+.textField{
+    padding: 3px;
+}
+
+.registerImg{
+    margin-top: 50px;
+    
+}
+
+h3, h5{
+    text-align: center;
+    font-family: "Monotype Corsiva",'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
