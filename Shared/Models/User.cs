@@ -12,4 +12,11 @@ public class User {
         Username = username;
         Password = password;
     }
+
+    public User(string username) {
+        Username = username;
+    }
+
+    public User() {
+    }
 }

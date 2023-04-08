@@ -18,6 +18,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<FileContext>();
 builder.Services.AddScoped<IUserLogic, UserLogicImpl>();
 builder.Services.AddScoped<IUserDao, UserFileDao>();
+builder.Services.AddScoped<IPostLogic, PostLogicImpl>();
+builder.Services.AddScoped<IPostDao, PostFileDao>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {

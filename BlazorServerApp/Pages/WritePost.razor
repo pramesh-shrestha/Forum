@@ -1,4 +1,7 @@
 ﻿@page "/WritePost"
+@using global::Shared.Dtos
+@inject AuthenticationStateProvider StateProvider
+
 
 <AuthorizeView>
 	<Authorized>
@@ -28,11 +31,18 @@
 
 
 @code {
+	private string username;
 	private string title;
 	private string content;
 	private string category;
 
+	protected override async Task OnInitializedAsync() {
+		AuthenticationState state = await StateProvider.GetAuthenticationStateAsync();
+		username = state.User.Identity.Name;
+	}
+
 	private async Task SharePost() {
 		
+		ForumPostDto dto = new ForumPostDto(username,title,category,content);
 	}
 }

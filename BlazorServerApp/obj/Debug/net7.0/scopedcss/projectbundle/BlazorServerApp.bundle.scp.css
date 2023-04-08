@@ -49,6 +49,7 @@ p[b-6gblk87mqa]{
 .acceptbtn:hover[b-hc74rqgrby]{
     transform: scale(1.1);
     box-shadow: 0 2px 10px 2px #3f3f3f;
+    cursor: pointer;
 }
 
 .button-row[b-hc74rqgrby]{
@@ -117,6 +118,7 @@ span[b-oz21eg4j3k]{
 .acceptbtn:hover[b-9oixqejh5e]{
     transform: scale(1.1);
     box-shadow: 0 2px 10px 2px #3f3f3f;
+    cursor: pointer;
 }
 
 .button-row[b-9oixqejh5e]{

@@ -1,5 +1,11 @@
-﻿namespace WebApi.Controllers; 
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
-public class PostController {
+namespace WebApi.Controllers; 
+
+[ApiController]
+[Route("/api/[controller]")]
+// [Authorize]
+public class PostController : ControllerBase{
     
 }
