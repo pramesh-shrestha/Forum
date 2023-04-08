@@ -1,0 +1,34 @@
+﻿@using BlazorServerApp.Services.ClientInterfaces
+@inject NavigationManager NavMgr
+@inject IUserService UserService
+@namespace LoginButtons
+
+<AuthorizeView>
+    <Authorized>
+        @* <img class="icon" src="img/Logout.png" @onclick="Logout"/> *@
+        <span>Hello, Welcome to The Conversation Cafe, @context.User.Identity.Name</span>
+        <a href="#" @onclick="Logout" class="icon">Log Out</a>
+    </Authorized>
+    <NotAuthorized>
+        @* <img class="icon" src="img/Login.png" @onclick="Login"/> *@
+        <a href="#" @onclick="Register" class="icon">Register</a>
+        <a href="#" @onclick="Login" class="icon">Login</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+
+    private void Register() {
+        NavMgr.NavigateTo("/RegisterUser");
+    }
+    private void Login()
+    {
+        NavMgr.NavigateTo("/Login");
+    }
+
+    private async Task Logout()
+    {
+        await UserService.LogoutAsync();
+        NavMgr.NavigateTo("/");
+    }
+}

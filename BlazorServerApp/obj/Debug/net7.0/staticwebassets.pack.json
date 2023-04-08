@@ -57,12 +57,28 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\_login.jpg",
+      "PackagePath": "staticwebassets\\img\\_login.jpg"
+    },
+    {
       "Id": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\background.jpg",
       "PackagePath": "staticwebassets\\img\\background.jpg"
     },
     {
+      "Id": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\notauthorized.gif",
+      "PackagePath": "staticwebassets\\img\\notauthorized.gif"
+    },
+    {
       "Id": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\register_img.jpg",
       "PackagePath": "staticwebassets\\img\\register_img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\register_img_.jpg",
+      "PackagePath": "staticwebassets\\img\\register_img_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\writepostbackround.jpg",
+      "PackagePath": "staticwebassets\\img\\writepostbackround.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlazorServerApp.Microsoft.AspNetCore.StaticWebAssets.props",

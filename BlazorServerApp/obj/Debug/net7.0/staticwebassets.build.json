@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mTrpscAIyx+pGk68mJjALAFbriMWLxOJT5HyBCdJbSE=",
+  "Hash": "30QZqVCDlP5bZv3q9wb70obbMpzhGeY5E9v/2QT03vM=",
   "Source": "BlazorServerApp",
   "BasePath": "_content/BlazorServerApp",
   "Mode": "Default",
@@ -272,6 +272,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
+      "Identity": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\_login.jpg",
+      "SourceId": "BlazorServerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\",
+      "BasePath": "_content/BlazorServerApp",
+      "RelativePath": "img/_login.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\_login.jpg"
+    },
+    {
       "Identity": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\background.jpg",
       "SourceId": "BlazorServerApp",
       "SourceType": "Discovered",
@@ -289,6 +306,40 @@
       "OriginalItemSpec": "wwwroot\\img\\background.jpg"
     },
     {
+      "Identity": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\notauthorized.gif",
+      "SourceId": "BlazorServerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\",
+      "BasePath": "_content/BlazorServerApp",
+      "RelativePath": "img/notauthorized.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\notauthorized.gif"
+    },
+    {
+      "Identity": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\register_img_.jpg",
+      "SourceId": "BlazorServerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\",
+      "BasePath": "_content/BlazorServerApp",
+      "RelativePath": "img/register_img_.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\register_img_.jpg"
+    },
+    {
       "Identity": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\register_img.jpg",
       "SourceId": "BlazorServerApp",
       "SourceType": "Discovered",
@@ -304,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\register_img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\img\\writepostbackround.jpg",
+      "SourceId": "BlazorServerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\wwwroot\\",
+      "BasePath": "_content/BlazorServerApp",
+      "RelativePath": "img/writepostbackround.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\writepostbackround.jpg"
     }
   ]
 }

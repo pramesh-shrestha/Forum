@@ -1,0 +1,38 @@
+﻿@page "/WritePost"
+
+<AuthorizeView>
+	<Authorized>
+		<div class="container">
+			<h1>Share Your Thoughts</h1>
+			<form>
+				<label>Title:</label>
+				<input @bind="title"  class="titleLength" type="text" required>
+        
+				<label>Category:</label>
+				<select @bind="category"  required>
+					<option value="">Select a category</option>
+					<option value="General">General</option>
+					<option value="Technology">Technology</option>
+					<option value="Sports">Sports</option>
+					<option value="Politics">Politics</option>
+				</select>
+        
+				<label>Content:</label>
+				<textarea @bind="content" rows="15" cols="80" required></textarea>
+        
+				<input type="submit" value="Share Post" @onclick="SharePost">
+			</form>
+		</div>
+	</Authorized>
+</AuthorizeView>
+
+
+@code {
+	private string title;
+	private string content;
+	private string category;
+
+	private async Task SharePost() {
+		
+	}
+}

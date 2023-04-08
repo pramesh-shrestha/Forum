@@ -38,3 +38,6 @@ C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\ref\BlazorSe
 C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\scopedcss\Pages\Login.razor.rz.scp.css
+C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\scopedcss\Pages\LoginButtons.razor.rz.scp.css
+C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\scopedcss\Pages\WritePost.razor.rz.scp.css

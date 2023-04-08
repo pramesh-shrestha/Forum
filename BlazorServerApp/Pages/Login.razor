@@ -1,0 +1,67 @@
+﻿@page "/Login"
+@using BlazorServerApp.Services.ClientInterfaces
+@using global::Shared.Dtos
+@inject NavigationManager NavMgr
+@inject IUserService UserService
+
+<AuthorizeView>
+    <NotAuthorized>
+        <h3>Log in and start sharing your thoughts.</h3>
+        <h5>"Connect with people who share your interests."</h5>
+        <div class="container-fluid">
+            <div class="form-group card">
+                <h3>Log In</h3>
+
+                <label>Username</label>
+                <div class="textField">
+                    <input type="text" placeholder="Enter username" @bind="userName" @bind:event="oninput">
+                </div>
+
+                <label>Password</label>
+                <div class="textField">
+                    <input type="password" placeholder="Enter password" @bind="password">
+                </div>
+
+                <div class="button-row">
+                    <button class="acceptbtn" @onclick="LoginAsync" disabled="@string.IsNullOrEmpty(userName)">Log in</button>
+                </div>
+                <div class="error">
+                    @if (!string.IsNullOrEmpty(errorLabel)) {
+                        <label style="color: @color">@errorLabel</label>
+                    }
+                </div>
+
+            </div>
+
+            <div class="form-group col-sm-8 offset-1 registerImg">
+                <img src="img/_login.jpg" alt="">
+            </div>
+        </div>
+
+    </NotAuthorized>
+    <Authorized>
+
+    </Authorized>
+</AuthorizeView>
+
+
+@code {
+    private string userName;
+    private string password;
+    private string errorLabel;
+    private string color;
+
+    private async Task LoginAsync() {
+        errorLabel = "";
+
+        try {
+            await UserService.LoginAsync(new UserLoginDto(userName, password));
+            NavMgr.NavigateTo("/");
+        }
+        catch (Exception e) {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+
+}

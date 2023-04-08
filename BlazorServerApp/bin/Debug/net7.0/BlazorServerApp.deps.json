@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "BlazorServerApp/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "7.0.4",
           "Shared": "1.0.0"
         },
         "runtime": {

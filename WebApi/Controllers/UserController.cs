@@ -29,9 +29,7 @@ public class UserController : ControllerBase {
             new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-            new Claim(ClaimTypes.GivenName, user.Firstname),
-            new Claim(ClaimTypes.Surname, user.Lastname),
-            new Claim(ClaimTypes.Name, user.Username),
+            new Claim(ClaimTypes.Name, user.Firstname + " " + user.Lastname),
             new Claim("DisplayName", user.Firstname + " " + user.Lastname)
         };
         return claims.ToList();
