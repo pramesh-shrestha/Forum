@@ -1,4 +1,5 @@
 ﻿
+using Shared.Dtos;
 using Shared.Models;
 using WebApi.FileData.DaoInterfaces;
 using WebApi.Services.LogicInterfaces;
@@ -20,5 +21,19 @@ public class UserLogicImpl : IUserLogic {
         }
         User created = await userDao.RegisterAsync(user);
         return created;
+    }
+
+    public async Task<User> ValidateUser(UserLoginDto loginDto) {
+        User? existingUser = await userDao.GetByUsernameAsync(loginDto.Username);
+
+        if (existingUser == null) {
+            throw new Exception("User not found");
+        }
+
+        if (!existingUser.Password.Equals(loginDto.Password)) {
+            throw new Exception("Password does not match");
+        }
+
+        return existingUser;
     }
 }

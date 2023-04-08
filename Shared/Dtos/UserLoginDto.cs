@@ -1,10 +1,10 @@
 ﻿namespace Shared.Dtos; 
 
-public class UserDto {
+public class UserLoginDto {
     public string Username { get; set; }
     public string Password { get; set; }
 
-    public UserDto(string username, string password) {
+    public UserLoginDto(string username, string password) {
         Username = username;
         Password = password;
     }

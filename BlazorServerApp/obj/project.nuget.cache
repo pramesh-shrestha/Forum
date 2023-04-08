@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ZjBPYb97x2UzhWxe4F3rZbBpk9x8/SfahIPcDL1PA5JvpSPqY0mzB0VwNcgzjdZteAGk+T1ZwvwCcid//0+pmA==",
+  "dgSpecHash": "XuFuDqCzOQIJ8MHOEZpv+1Ju2q1ol6lUiPeIDarG4zwpqMf0lVeBz2HZNFXLUFghdiwKB56r38vHY0GWf+jgQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\prmss\\RiderProjects\\Forum\\BlazorServerApp\\BlazorServerApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\prmss\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.4\\microsoft.aspnetcore.authorization.7.0.4.nupkg.sha512",
+    "C:\\Users\\prmss\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.4\\microsoft.aspnetcore.metadata.7.0.4.nupkg.sha512",
+    "C:\\Users\\prmss\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\prmss\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\prmss\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\prmss\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

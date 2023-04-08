@@ -35,3 +35,6 @@ C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\refint\Blazo
 C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\BlazorServerApp.pdb
 C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\BlazorServerApp.genruntimeconfig.cache
 C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\obj\Debug\net7.0\ref\BlazorServerApp.dll
+C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\prmss\RiderProjects\Forum\BlazorServerApp\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
