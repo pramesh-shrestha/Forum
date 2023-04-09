@@ -5,7 +5,7 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
-// [Authorize]
+[Authorize] //This means this Controller can only be interacted with, if the caller provides a valid JWT.
 public class PostController : ControllerBase{
     
 }
