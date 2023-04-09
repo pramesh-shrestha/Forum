@@ -14,6 +14,13 @@ public class FileContext {
         }
     }
 
+    public ICollection<ForumPost> Posts {
+        get {
+            LoadData();
+            return dataContainer!.Posts;
+        }
+    }
+
     private void LoadData() {
         if (dataContainer != null) {
             return;
@@ -21,7 +28,8 @@ public class FileContext {
 
         if (!File.Exists(filePath)) {
             dataContainer = new DataContainer() {
-                Users = new List<User>()
+                Users = new List<User>(),
+                Posts = new List<ForumPost>() 
             };
             return;
         }

@@ -14,6 +14,7 @@ public class PostLogicImpl : IPostLogic {
         this.postDao = postDao;
     }
 
+    //create post
     public async Task<ForumPost> CreatePostAsync(ForumPostDto postDto) {
 
         Validate(postDto);
@@ -22,6 +23,7 @@ public class PostLogicImpl : IPostLogic {
         
     }
 
+    //validate
     private void Validate(ForumPostDto postDto) {
         if (string.IsNullOrEmpty(postDto.Title)) {
             throw new Exception("Title cannot be empty");
@@ -34,6 +36,7 @@ public class PostLogicImpl : IPostLogic {
         }
     }
 
+    //get post by id
     public async Task<ForumPost> GetPostByIdAsync(int postId) {
         ForumPost post = await postDao.GetPostByIdAsync(postId);
         if (post == null) {
@@ -43,24 +46,35 @@ public class PostLogicImpl : IPostLogic {
         return post;
     }
 
+    //get all posts
     public async Task<List<ForumPost>> GetAllPostsAsync() {
         List<ForumPost> posts = await postDao.GetAllPostsAsync();
         return posts;
     }
 
+    //delete
     public async Task DeletePostByIdAsync(int postId) {
-        await postDao.DeletePostByIdAsync(postId);
+        ForumPost post = await postDao.GetPostByIdAsync(postId);
+        if (post == null) {
+            throw new Exception($"No post found with id {postId}");
+        }
+
+        await postDao.DeletePostAsync(post);
     }
 
+    //update
     public async Task UpdatePostAsync(ForumPostDto postDto) {
-        ForumPost existingPost = await postDao.GetPostByUsernameAsync(postDto.Username);
+        ForumPost existingPost = await postDao.GetPostByIdAsync(postDto.PostId);
+        if (existingPost == null) {
+            throw new Exception("Post not found");
+        }
         string username = postDto.Username;
         string title = postDto.Title ?? existingPost.Title; //take postDto.Title. In case if it is null, then take existingPost.Title
         string category = postDto.Category ?? existingPost.Category;
         string content = postDto.Content ?? existingPost.Content;
 
-        ForumPostDto newPostDto = new ForumPostDto(username, title, category, content);
-        await postDao.UpdatePostAsync(newPostDto);
+        ForumPost newPost = new ForumPost(new User(username), title, category, content);
+        await postDao.UpdatePostAsync(newPost);
     }
     
     
