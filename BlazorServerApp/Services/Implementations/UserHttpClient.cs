@@ -58,7 +58,7 @@ public class UserHttpClient : IUserService {
     //Logout, clear authentication state and become anonymous
     public Task LogoutAsync() {
         Jwt = null;
-        ClaimsPrincipal claimsPrincipal = CreateClaimsPrincipal();
+        ClaimsPrincipal claimsPrincipal = new();
         OnAuthStateChanged.Invoke(claimsPrincipal);
         return Task.CompletedTask;
     }
