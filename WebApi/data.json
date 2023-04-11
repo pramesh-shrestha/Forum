@@ -17,6 +17,12 @@
       "Lastname": "Pandey",
       "Username": "pyakuri",
       "Password": "password"
+    },
+    {
+      "Firstname": "Troels",
+      "Lastname": "Mortensen",
+      "Username": "trmo",
+      "Password": "password"
     }
   ],
   "Posts": [
@@ -40,6 +46,20 @@
       "Title": "DotNet",
       "Category": "Technology",
       "Content": ".NET is a software development framework developed by Microsoft. It is designed to provide developers with a consistent, comprehensive platform for building applications that can run on a variety of devices, operating systems, and web browsers. The framework includes a large class library that provides access to system functionality, along with a runtime environment that manages the execution of .NET applications.\n\n.NET supports several programming languages, including C#, VB.NET, F#, and C\u002B\u002B. Developers can use these languages to write code that can run on Windows, Linux, and macOS. The framework includes tools for building web, desktop, and mobile applications, as well as cloud services and microservices.\n\nOne of the key benefits of .NET is that it simplifies the development process by providing a unified platform for building applications. The framework includes many features that reduce the amount of code that developers need to write, including automatic memory management and garbage collection. It also provides a variety of pre-built components and libraries that can be used to speed up development.\n\nIn addition to these benefits, .NET also provides excellent performance and security features. The framework is optimized for performance, and its runtime environment includes features like just-in-time (JIT) compilation and native image generation. It also includes built-in security features, such as role-based access control and encryption. These features help to ensure that .NET applications are secure and perform well, even in demanding environments."
+    },
+    {
+      "PostId": 4,
+      "Username": "trmo",
+      "Title": "Test",
+      "Category": "Technology",
+      "Content": "NUnit is a unit testing framework for the .NET platform. It allows developers to write automated tests for their .NET applications, ensuring that the code behaves as expected and meets the requirements. NUnit provides a range of assertion methods that developers can use to test their code\u0027s behavior, such as asserting that a method returns the expected value or that an exception is thrown under certain conditions. It also supports test fixtures, which are classes that contain a collection of test methods that can be run together. NUnit is widely used by .NET developers to ensure the quality and reliability of their code."
+    },
+    {
+      "PostId": 5,
+      "Username": "trmo",
+      "Title": "NUnit",
+      "Category": "Technology",
+      "Content": "NUnit is a unit testing framework for the .NET platform. It allows developers to write automated tests for their .NET applications, ensuring that the code behaves as expected and meets the requirements. NUnit provides a range of assertion methods that developers can use to test their code\u0027s behavior, such as asserting that a method returns the expected value or that an exception is thrown under certain conditions. It also supports test fixtures, which are classes that contain a collection of test methods that can be run together. NUnit is widely used by .NET developers to ensure the quality and reliability of their code."
     }
   ]
 }

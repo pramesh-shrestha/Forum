@@ -26,7 +26,13 @@
 	}
 
 	private async Task ViewFullPost(int postId) {
-		NavMgr.NavigateTo($"/DisplayPost/{postId}");
+		try {
+			NavMgr.NavigateTo($"/DisplayPost/{postId}");
+		}
+		catch (Exception e) {
+			Console.WriteLine(e);
+		}
+		
 		
 	}
 
