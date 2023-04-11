@@ -1,0 +1,35 @@
+.post-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.post-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.post-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.post-card a {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.post-card a:hover {
+    background-color: #0062cc;
+}

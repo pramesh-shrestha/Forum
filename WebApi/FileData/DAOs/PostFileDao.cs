@@ -7,7 +7,7 @@ namespace WebApi.FileData.DAOs;
 
 public class PostFileDao : IPostDao {
 
-    private FileContext context;
+    private readonly FileContext context;
 
     public PostFileDao(FileContext context) {
         this.context = context;
@@ -16,11 +16,12 @@ public class PostFileDao : IPostDao {
     //create post
     public Task<ForumPost> CreatePostAsync(ForumPost post) {
         int id = 1;
-        //finding the last id that was given
-        if (context.Posts.Any()) {
-            id = context.Posts.Max(p => post.PostId);
-            id++;
-        }
+        // finding the last id that was given
+         if (context.Posts.Any()) {
+             Console.WriteLine(context.Posts.Any());
+             id = context.Posts.Max(p => p.PostId);
+             id++;
+         }
 
         post.PostId = id;
         context.Posts.Add(post);

@@ -20,13 +20,13 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prmss/RiderProjects/Forum/BlazorServerApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/prmss/RiderProjects/Forum/BlazorServerApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/prmss/RiderProjects/Forum/BlazorServerApp/Pages/DisplayPost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVBvc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rmguyft6rr
 
 [C:/Users/prmss/RiderProjects/Forum/BlazorServerApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope = b-oz21eg4j3k
 [C:/Users/prmss/RiderProjects/Forum/BlazorServerApp/Pages/RegisterUser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJVc2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-9oixqejh5e
+
+[C:/Users/prmss/RiderProjects/Forum/BlazorServerApp/Pages/ViewPosts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-q33l344u9p
 
 [C:/Users/prmss/RiderProjects/Forum/BlazorServerApp/Pages/WritePost.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdGVQb3N0LnJhem9y

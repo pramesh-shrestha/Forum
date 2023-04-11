@@ -56,7 +56,7 @@
 
         try {
             await UserService.LoginAsync(new UserLoginDto(userName, password));
-            NavMgr.NavigateTo("/");
+            NavMgr.NavigateTo("/ViewPosts");
         }
         catch (Exception e) {
             Console.WriteLine(e);

@@ -8,5 +8,5 @@ public interface IPostLogic {
     Task<ForumPost> GetPostByIdAsync(int postId);
     Task<List<ForumPost>> GetAllPostsAsync();   
     Task DeletePostByIdAsync(int postId);
-    Task UpdatePostAsync(ForumPostDto postDto);
+    Task UpdatePostAsync(ForumPostUpdateDto postDto);
 }   

@@ -1,0 +1,33 @@
+﻿@page "/DisplayPost/{postId:int}"
+@using global::Shared.Models
+@using BlazorServerApp.Services.ClientInterfaces
+@inject IPostService PostService
+
+
+<h2>@post.Title</h2>
+<div class="card">
+    <div class="card-header">
+        <div class="postInfo">
+            <p>Author: @post.Username</p>
+            <p>Category: @post.Category</p>
+        </div>
+    </div>
+        <div class="description">
+            <p>@post.Content</p>
+        </div>
+    
+</div>
+
+
+@code {
+
+    [Parameter] //this will set the the value of postId from the route
+    public int postId { get; set; }
+
+    private ForumPost? post = new();
+
+    protected override async Task OnInitializedAsync() {
+        post = await PostService.GetPostByIdAsync(postId);
+    }
+
+}

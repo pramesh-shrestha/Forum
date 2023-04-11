@@ -1,0 +1,46 @@
+
+/* Style for card container */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6D5D5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+    max-width: 100%;
+}
+
+/* Style for card header */
+.card-header {
+    background-color: #03173E;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Style for post info */
+.postInfo {
+    display: block;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+.postInfo p {
+    margin: 0;
+}
+
+/* Style for post description */
+.description {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.description p {
+    margin-bottom: 10px;
+}

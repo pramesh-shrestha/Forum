@@ -1,6 +1,8 @@
 ﻿@page "/WritePost"
 @using global::Shared.Dtos
+@using BlazorServerApp.Services.ClientInterfaces
 @inject AuthenticationStateProvider StateProvider
+@inject IPostService PostService
 
 
 <AuthorizeView>
@@ -24,6 +26,12 @@
 				<textarea @bind="content" rows="15" cols="80" required></textarea>
         
 				<input type="submit" value="Share Post" @onclick="SharePost">
+				<div class="error">
+					@if (!string.IsNullOrEmpty(errorLabel)) {
+						<label style="color: @color">@errorLabel</label>
+					}
+				</div>
+				
 			</form>
 		</div>
 	</Authorized>
@@ -31,18 +39,39 @@
 
 
 @code {
-	private string username;
-	private string title;
-	private string content;
-	private string category;
+	private string username = "";
+	private string title = "";
+	private string content = "";
+	private string category = "";
+	private string errorLabel = "";
+	private string color = "";
 
 	protected override async Task OnInitializedAsync() {
 		AuthenticationState state = await StateProvider.GetAuthenticationStateAsync();
-		username = state.User.Identity.Name;
+		username = state.User.Identity!.Name;
 	}
 
 	private async Task SharePost() {
+		errorLabel = "";
+
+		try {
+			if (string.IsNullOrEmpty(errorLabel)) {
+				ForumPostDto postDto = new ForumPostDto {
+					Username = username,
+					Title = title,
+					Category = category,
+					Content = content
+				};
+				await PostService.CreatePostAsync(postDto);
+				errorLabel = "Post created successfully";
+				color = "green";
+			}
+		}
+		catch (Exception e) {
+			Console.WriteLine(e);
+			errorLabel = e.Message;
+			color = "red";
+		}
 		
-		ForumPostDto dto = new ForumPostDto(username,title,category,content);
 	}
-}
+}	

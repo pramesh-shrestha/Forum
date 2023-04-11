@@ -1,3 +1,50 @@
+/* _content/BlazorServerApp/Pages/DisplayPost.razor.rz.scp.css */
+
+/* Style for card container */
+.card[b-rmguyft6rr] {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6D5D5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+    max-width: 100%;
+}
+
+/* Style for card header */
+.card-header[b-rmguyft6rr] {
+    background-color: #03173E;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Style for post info */
+.postInfo[b-rmguyft6rr] {
+    display: block;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+.postInfo p[b-rmguyft6rr] {
+    margin: 0;
+}
+
+/* Style for post description */
+.description[b-rmguyft6rr] {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.description p[b-rmguyft6rr] {
+    margin-bottom: 10px;
+}
 /* _content/BlazorServerApp/Pages/Index.razor.rz.scp.css */
 h1[b-6gblk87mqa], p[b-6gblk87mqa]{
     font-weight: bolder;
@@ -143,6 +190,42 @@ h3[b-9oixqejh5e], h5[b-9oixqejh5e]{
     text-align: center;
     font-family: "Monotype Corsiva",'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
+}
+/* _content/BlazorServerApp/Pages/ViewPosts.razor.rz.scp.css */
+.post-card[b-q33l344u9p] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.post-card h2[b-q33l344u9p] {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.post-card p[b-q33l344u9p] {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.post-card a[b-q33l344u9p] {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.post-card a:hover[b-q33l344u9p] {
+    background-color: #0062cc;
 }
 /* _content/BlazorServerApp/Pages/WritePost.razor.rz.scp.css */
 .container[b-0wegkea9kx] {

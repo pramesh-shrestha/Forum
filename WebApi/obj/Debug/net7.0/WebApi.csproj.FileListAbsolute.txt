@@ -33,7 +33,6 @@ C:\Users\prmss\RiderProjects\Forum\WebApi\obj\Debug\net7.0\refint\WebApi.dll
 C:\Users\prmss\RiderProjects\Forum\WebApi\obj\Debug\net7.0\WebApi.pdb
 C:\Users\prmss\RiderProjects\Forum\WebApi\obj\Debug\net7.0\WebApi.genruntimeconfig.cache
 C:\Users\prmss\RiderProjects\Forum\WebApi\obj\Debug\net7.0\ref\WebApi.dll
-C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\data.json
 C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
@@ -44,3 +43,4 @@ C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\Microsoft.IdentityMod
 C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\prmss\RiderProjects\Forum\WebApi\bin\Debug\net7.0\data.json

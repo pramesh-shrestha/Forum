@@ -3,3 +3,19 @@ POST https://localhost:7296/api/user/login
 Content-Type: application/json
 
 {"Username": "pramesh", "Password": "password"}
+
+###
+
+POST https://localhost:7296/api/post/createPost
+Content-Type: application/json
+
+
+{
+  "username": "pramesh",
+  "title": "test",
+  "category": "General",
+  "content": "This is a test"
+}
+
+
+

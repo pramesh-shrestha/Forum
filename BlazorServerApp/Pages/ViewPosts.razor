@@ -1,0 +1,33 @@
+﻿@page "/ViewPosts"
+@using BlazorServerApp.Services.ClientInterfaces
+@using global::Shared.Models
+@inject IPostService PostService
+@inject NavigationManager NavMgr
+
+<h3>ViewPosts</h3>
+
+@foreach (var post in posts) {
+	<div class="post-card">
+		<h6>Author: @post.Username</h6>
+		<h6>Category: @post.Category</h6>
+		<h2>@post.Title</h2>
+		<p>@post.Content.Substring(0,100)....</p>
+		<a href="#" @onclick="() => ViewFullPost(post.PostId)">Read More</a>
+	</div>
+}
+
+
+
+@code {
+	private ForumPost? post;
+	private IEnumerable<ForumPost>? posts = new List<ForumPost>();
+	protected override async Task OnInitializedAsync() {
+		posts = await PostService.GetAllPostsAsync();
+	}
+
+	private async Task ViewFullPost(int postId) {
+		NavMgr.NavigateTo($"/DisplayPost/{postId}");
+		
+	}
+
+}
