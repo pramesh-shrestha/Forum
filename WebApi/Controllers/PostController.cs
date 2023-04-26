@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Application.Services.LogicInterfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Shared.Dtos;
 using Shared.Models;
-using WebApi.Services.LogicInterfaces;
 
 namespace WebApi.Controllers; 
 

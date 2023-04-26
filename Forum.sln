@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerApp", "BlazorServerApp\BlazorServerApp.csproj", "{543262D1-4C8A-43B1-AC1F-D462BFE1D463}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCDataAccess", "EFCDataAccess\EFCDataAccess.csproj", "{0305273D-D9CA-41CE-BBA5-DB7DD3A0ED88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{56C9D23E-6018-4624-AE84-ED3863F54067}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{543262D1-4C8A-43B1-AC1F-D462BFE1D463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{543262D1-4C8A-43B1-AC1F-D462BFE1D463}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{543262D1-4C8A-43B1-AC1F-D462BFE1D463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0305273D-D9CA-41CE-BBA5-DB7DD3A0ED88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0305273D-D9CA-41CE-BBA5-DB7DD3A0ED88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0305273D-D9CA-41CE-BBA5-DB7DD3A0ED88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0305273D-D9CA-41CE-BBA5-DB7DD3A0ED88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C9D23E-6018-4624-AE84-ED3863F54067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C9D23E-6018-4624-AE84-ED3863F54067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C9D23E-6018-4624-AE84-ED3863F54067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C9D23E-6018-4624-AE84-ED3863F54067}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

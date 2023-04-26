@@ -2,11 +2,11 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Application.Services.LogicInterfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Shared.Dtos;
 using Shared.Models;
-using WebApi.Services.LogicInterfaces;
 
 namespace WebApi.Controllers; 
 
@@ -65,6 +65,7 @@ public class UserController : ControllerBase {
     [HttpPost("register")]
     public async Task<ActionResult<User>> RegisterUser([FromBody] User user) {
         try {
+            Console.WriteLine("Controller");
             User newUser = await userLogic.RegisterAsync(user);
             return Created($"/api/user/{user.Username}", newUser);
         }

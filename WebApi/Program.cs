@@ -1,11 +1,14 @@
 using System.Text;
+using Application.DaoInterfaces;
+using Application.Services.LogicImplementations;
+using Application.Services.LogicInterfaces;
+using EFCDataAccess;
+using EFCDataAccess.DAOs;
 using FileData;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using WebApi.FileData.DaoInterfaces;
 using WebApi.FileData.DAOs;
 using WebApi.Services.LogicImplementations;
-using WebApi.Services.LogicInterfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,11 +18,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<FileContext>();
+builder.Services.AddScoped<ForumContext>();
 builder.Services.AddScoped<IUserLogic, UserLogicImpl>();
-builder.Services.AddScoped<IUserDao, UserFileDao>();
+builder.Services.AddScoped<IUserDao, UserDaoImpl>();
 builder.Services.AddScoped<IPostLogic, PostLogicImpl>();
-builder.Services.AddScoped<IPostDao, PostFileDao>();
+builder.Services.AddScoped<IPostDao, PostDaoImpl>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -58,3 +61,4 @@ app.UseCors(x => x
 app.MapControllers();
 
 app.Run();
+
