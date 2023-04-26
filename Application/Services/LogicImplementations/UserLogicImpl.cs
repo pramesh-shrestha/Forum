@@ -1,10 +1,9 @@
-﻿
-using Application.DaoInterfaces;
+﻿using Application.DaoInterfaces;
 using Application.Services.LogicInterfaces;
 using Shared.Dtos;
 using Shared.Models;
 
-namespace WebApi.Services.LogicImplementations; 
+namespace Application.Services.LogicImplementations; 
 
 public class UserLogicImpl : IUserLogic {
 

@@ -8,7 +8,6 @@ using FileData;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using WebApi.FileData.DAOs;
-using WebApi.Services.LogicImplementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
